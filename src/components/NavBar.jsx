@@ -5,11 +5,11 @@ import CartWidget from "./CartWidget/CartWidget"
 const NavBar = () => {
     return(
         <nav>
-            <h3>Ecommerce</h3>
+            <h3>Horizonte interior</h3>
             <div>
-                <button>Celulares</button>
-                <button>Tablets</button>
-                <button>Notebooks</button>
+                <button>Muebles</button>
+                <button>Decoracion</button>
+                <button>Comedor</button>
             </div>
         <CartWidget />
         </nav>
