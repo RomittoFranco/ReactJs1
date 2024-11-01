@@ -1,0 +1,37 @@
+.cart {
+    padding: 2rem;
+  }
+  
+  .cart-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .cart-total {
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .clear-cart-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .clear-cart-button:hover {
+    background-color: #c82333;
+  }
