@@ -29,7 +29,7 @@ const Cart = () => {
             <p>Cantidad: {item.quantity}</p>
             <p>Subtotal: ${(item.price * item.quantity).toFixed(2)}</p>
           </div>
-          <button 
+          <button
             onClick={() => removeItem(item.id)}
             className="remove-item-button"
           >
@@ -37,7 +37,7 @@ const Cart = () => {
           </button>
         </div>
       ))}
-      
+
       <div className="cart-summary">
         <div className="cart-total">
           <h3>Total: ${getTotal().toFixed(2)}</h3>
@@ -46,9 +46,9 @@ const Cart = () => {
           <button onClick={clear} className="clear-cart-button">
             Vaciar Carrito
           </button>
-          <button className="checkout-button">
-            Finalizar Compra
-          </button>
+          <Link to="/checkout" className="checkout-button">
+            Proceder al pago
+          </Link>
         </div>
       </div>
     </div>
